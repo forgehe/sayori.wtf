@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Dosis:400,200);
+
+
+
+video#bgvid {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto;
+  width: 100%;
+  z-index: -1;
+  background-size: cover;
+}
+
+h1 {
+    font-family: 'Ubuntu Mono', Arial, serif; font-weight: 700; 
+}
+
+p {
+    font-family: 'Ubuntu Mono', Arial, serif; font-weight: 400;
+}
+
+
+body {
+  background: #808080;
+}
+button {
+  -webkit-border-radius: 31;
+  -moz-border-radius: 31;
+  border-radius: 31px;
+  font-family: 'Ubuntu Mono';
+  color: #ffffff;
+  font-size: 14px;
+  background: #757575;
+  padding: 6px 10px 6px 10px;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+button#active {
+  background: #d6d6d6;
+  color: #000000;
+}
+
+.aikuro {
+background: #CA0096;
+}
+
+#aikuroImg {
+background-size: cover;
+background-image: url("resources/aikuro.png");
+margin-left: 15px;
+}
+
+.levi {
+background: #2A6739;
+}
+
+#leviImg {
+background-size: cover;
+background-image: url("resources/levi.png");
+margin-left: 15px;
+}
+
+.cena {
+background: #FDA500;
+}
+
+#cenaImg {
+background-size: cover;
+background-image: url("resources/cena.png");
+margin-left: 15px;
+}
+
+#yuriImg {
+background-size: cover;
+background-image: url("resources/yuri.png");
+margin-left: 15px;
+}
+
+.yuri {
+background: #F24B09;
+}
+
+
+
+#selector {
+  position: fixed;
+  top: 15px;
+  left: 10px;
+  font-size: 90%;
+}
+a {
+  color: #00A8E0;
+  text-decoration: none;
+}
+h1 {
+  left: 0px;
+  right: 0px;
+  top: 20px;
+  position: fixed;
+  color: white;
+  text-align: center;
+}
+
+#loopIcon {
+  display: block;
+  width: 50px;
+  height: 30px;
+  border: 0;
+  background-color: #4A4A4A;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+
+.volume-control {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  color: #e3e3e3;
+  font-weight: bold;
+}
+
+.volume-up {
+  width: 50px;
+  height: 50px;
+  -webkit-clip-path: polygon(95% 40%, 95% 95%, 50% 70%, 5% 95%, 5% 40%, 50% 5%);
+  clip-path: polygon(95% 40%, 95% 95%, 50% 70%, 5% 95%, 5% 40%, 50% 5%);
+  border: 0;
+  background-color: #4A4A4A;
+  opacity: 0.6;
+}
+
+.volume-down {
+  width: 50px;
+  height: 50px;
+  -webkit-clip-path: polygon(95% 5%, 95% 60%, 50% 95%, 5% 60%, 5% 5%, 50% 30%);
+  clip-path: polygon(95% 5%, 95% 60%, 50% 95%, 5% 60%, 5% 5%, 50% 30%);
+  border: 0;
+  background-color: #4A4A4A;
+  opacity: 0.6;
+}
+
+.volumeNum {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 16pt;
+  text-shadow:
+    -1px -1px 0 #4A4A4A,
+    1px -1px 0 #4A4A4A,
+    -1px 1px 0 #4A4A4A,
+    1px 1px 0 #4A4A4A;  
+  opacity: 0.6
+}
+
+#repeat {
+  cursor: pointer;
+}
+#volume-up:hover, #volume-down:hover {
+  cursor: pointer;
+}

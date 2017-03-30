@@ -1,0 +1,26 @@
+<video id="bgvid" autoplay>
+			<source type="video/mp4" src="aikuro/demod.mp4">
+			Your browser sucks, and it can't load this video...
+		</video>
+
+		<div id="selector">
+				<button type="button" class="aikuro" id="aikuroImg">&nbsp</button>
+				<button onclick="videoSelect('aikuro', 1);" type="button" class="aikuro">1</button>
+				<button onclick="videoSelect('aikuro', 2);" type="button" class="aikuro">2</button>
+				<button onclick="videoSelect('aikuro', 3);" type="button" class="aikuro">3</button>
+				<button type="button" class="levi" id="leviImg">&nbsp</button>
+				<button onclick="videoSelect('levi', 1);" type="button" class="levi">1</button>
+				<button type="button" class="cena" id="cenaImg">&nbsp</button>
+				<button onclick="videoSelect('cena', 1);" type="button" class="cena">1</button>
+				<button type="button" class="yuri" id="yuriImg">&nbsp</button>
+				<button onclick="videoSelect('yuri', 1);" type="button" class="yuri">1</button>
+		</div>
+
+		<div class="volume-control">
+			<button id="loopIcon" onclick="toggleLoop()">Loop</button>
+			<button class="volume-up" onclick="volumeChange(true)" type="button"></button>
+			<p class="volumeNum"><span id="volumePercentage">70</span>%</p>
+			<button class="volume-down" onclick="volumeChange(false)" type="button"></button>
+
+		</div>
+			
