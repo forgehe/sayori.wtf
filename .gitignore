@@ -1,14 +1,14 @@
 metadata/
 hentaidude/
-*.mp4
-*.webm
 .well-known/
 not_public_html/
 google8e417e2d8feac378.html
-robots.txt
 traffic.html
 trafficlive.html
 jquery.min.js
+*.mp4
+*.webm
+*.txt
 
 
 ## Ignore Visual Studio temporary files, build results, and
