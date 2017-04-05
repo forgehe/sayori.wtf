@@ -8,6 +8,14 @@ jquery.min.js
 *.mp4
 *.webm
 *.txt
+*.ini
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.ico
+*.ttf
+*.zip
 
 
 ## Ignore Visual Studio temporary files, build results, and
