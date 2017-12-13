@@ -1,0 +1,286 @@
+/*
+8 8888     ,88'          .8.          8 8888     ,88'          .8.                   ,8.       ,8.           ,o888888o.     8 8888888888   
+8 8888    ,88'          .888.         8 8888    ,88'          .888.                 ,888.     ,888.       . 8888     `88.   8 8888         
+8 8888   ,88'          :88888.        8 8888   ,88'          :88888.               .`8888.   .`8888.     ,8 8888       `8b  8 8888         
+8 8888  ,88'          . `88888.       8 8888  ,88'          . `88888.             ,8.`8888. ,8.`8888.    88 8888        `8b 8 8888         
+8 8888 ,88'          .8. `88888.      8 8888 ,88'          .8. `88888.           ,8'8.`8888,8^8.`8888.   88 8888         88 8 888888888888 
+8 8888 88'          .8`8. `88888.     8 8888 88'          .8`8. `88888.         ,8' `8.`8888' `8.`8888.  88 8888         88 8 8888         
+8 888888<          .8' `8. `88888.    8 888888<          .8' `8. `88888.       ,8'   `8.`88'   `8.`8888. 88 8888        ,8P 8 8888         
+8 8888 `Y8.       .8'   `8. `88888.   8 8888 `Y8.       .8'   `8. `88888.     ,8'     `8.`'     `8.`8888.`8 8888       ,8P  8 8888         
+8 8888   `Y8.    .888888888. `88888.  8 8888   `Y8.    .888888888. `88888.   ,8'       `8        `8.`8888.` 8888     ,88'   8 8888         
+8 8888     `Y8. .8'       `8. `88888. 8 8888     `Y8. .8'       `8. `88888. ,8'         `         `8.`8888.  `8888888P'     8 888888888888 
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Dosis:400,200);
+
+$font-standard: 'Ubuntu Mono', Arial, serif;
+$font-overlay: 'Dosis', sans-serif;
+
+/* 
+http://type-scale.com/
+1.250 Major Thirds
+2.441em kaka.moe
+1.953em	kaka.moe
+1.563em	kaka.moe
+1.25em	kaka.moe
+1em		kaka.moe
+0.8em	kaka.moe
+0.64em	kaka.moe
+0.512em	kaka.moe
+*/
+$font-size-plus4: 	2.441em;
+$font-size-plus3: 	1.953em;
+$font-size-plus2: 	1.563em;
+$font-size-plus1: 	1.25em;
+$font-size-default:	1em;
+$font-size-minus1: 	0.8em;
+$font-size-minus2: 	0.64em;
+$font-size-minus3: 	0.512em;
+
+$font-size-rem-plus4: 	2.441rem;
+$font-size-rem-plus3: 	1.953rem;
+$font-size-rem-plus2: 	1.563rem;
+$font-size-rem-plus1: 	1.25rem;
+$font-size-rem-default:	1rem;
+$font-size-rem-minus1: 	0.8rem;
+$font-size-rem-minus2: 	0.64rem;
+$font-size-rem-minus3: 	0.512rem;
+
+// Palette URL: http://paletton.com/#uid=31t0U0kgXBz6M+VdTTkg+oqcK4P */
+// As hex codes */
+$color-primary-0: #FFEA78;	// Main Primary color */ Yellow
+$color-primary-1: #FFF7C9;
+$color-primary-2: #FFEE90;
+$color-primary-3: #C3B25B;
+$color-primary-4: #262417;
+$color-secondary-1-0: #D765A5;	// Main Secondary color (1) */ Purple
+$color-secondary-1-1: #FFC9E7;
+$color-secondary-1-2: #F38AC5;
+$color-secondary-1-3: #9C4978;
+$color-secondary-1-4: #1F1319;
+$color-secondary-2-0: #589CB3;	// Main Secondary color (2) */ Blue
+$color-secondary-2-1: #CBF2FF;
+$color-secondary-2-2: #87D0E8;
+$color-secondary-2-3: #3B6A7A;
+$color-secondary-2-4: #0F1618;
+
+// 1,2 are lighter, 3,4 are darker */
+
+$colour-standard-text: #111111;
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: $color-primary-0;
+	font-size: $font-size-rem-default;
+    -webkit-text-size-adjust: none;
+
+}
+ul {
+	list-style: none;
+	text-align: left;
+	width: 50vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+li {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Ubuntu Mono', Arial, serif; font-weight: 700; 
+}
+
+h1 {
+	font-size: $font-size-plus4;
+}
+h2 {
+	font-size: $font-size-plus3;
+}
+h3, h4 {
+	font-size: $font-size-plus2;
+}
+h5, h6 {
+	font-size: $font-size-plus1;
+}
+p {
+	font-size: $font-size-default;
+}
+
+p, li, ul, span {
+	font-family: 'Ubuntu Mono', Arial, serif; font-weight: 400;
+	color: $colour-standard-text;
+}
+a  {
+	text-decoration: none;
+	color: lighten($color-primary-4, 20%);
+	&:hover {
+		color: darken($color-primary-2, 20%);
+	}
+}
+
+.bold {
+	font-weight: bold;
+}
+.header {
+	display: block;
+	margin: 0;
+	padding: 0;
+	background-color: $color-secondary-2-2;
+}
+
+.headerMenu {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	height: 2.5em;
+	li {
+		display: inline-block;
+		min-width: 10em;
+		background-color: darken($color-secondary-2-2, 10%);
+		margin: auto 1em;
+		&:active {
+			position: relative;
+			top: -1px;
+		}
+		&:hover {
+			background-color: lighten($color-secondary-2-0, 10%);
+		}
+		h3 {
+			margin: auto auto;
+			padding: 0.5em 0.75em;
+			color: $color-secondary-2-1;
+			a {
+				color: $color-secondary-2-1;
+			}
+		}
+	}
+
+}
+.body-content {
+	min-height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+.body-textbox {
+	@include border-radius(1em);
+	width: 75vw;
+	border-style: solid;
+	border-color: $color-primary-1;
+	background-color: $color-primary-2;
+	margin: 3em auto;
+	h1 {
+		font-family: $font-overlay;
+	}
+}
+
+.image-spacer {
+	height: 70vh;
+	background-color: rgba($color-primary-4, 0.7);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-blend-mode: color-dodge;
+	margin: 0;
+	margin-bottom: -5em;
+	padding: 0;
+
+}
+
+
+footer {
+	background-color: lighten($color-secondary-2-4, 20%);
+	min-height: 15vh;
+	padding-top: 1em;
+
+}
+
+.footerMenu {
+	display: block;
+	padding-bottom: 1em;
+	nav {
+		text-align: left;
+		display: inline-block;
+		max-width: 30vh;
+		padding: 0 1em 0.25em 1em;
+		h3 {
+			text-decoration: underline;
+			font-weight: 300;
+		}
+		h3, h4 {
+			margin: 0;
+			padding: 0;
+			font-weight: 200;
+			color: $color-secondary-2-1;
+			font-size: $font-size-minus1;
+			a {
+				color: $color-secondary-2-1;
+			}
+		}
+	}
+}
+
+
+
+.copyright {
+	padding: 1em 0;
+	p {
+		font-size: $font-size-minus3;
+		margin: 0;
+		padding: 0;
+		color: $color-secondary-2-0;
+	}
+}
+
+
+@media screen and (max-width: 640px) {
+	body {
+		font-size: $font-size-rem-plus1;
+	}
+	.headerMenu {
+		height: auto;
+		li {
+			display: block;
+			border-style: solid none;
+    		border-width: 1px;
+			border-color: $color-secondary-2-1;
+			h3 {
+				font-size: $font-size-default;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		font-size: $font-size-rem-plus1;
+	}
+	.footerMenu {
+		nav {
+			display: block;
+			text-align: left;
+			h3, h4 {
+				font-size: $font-size-minus2;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+	body {
+		font-size: $font-size-rem-plus1;
+	}
+	.body-textbox {
+		width: 90vw;
+	}
+}
+
+
