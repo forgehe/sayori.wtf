@@ -56,6 +56,8 @@ $rgba-primary-4: rgba( 53, 36, 36,1);
 body {
   background-color: $color-primary-0;
   background-image: url("../resources/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 0;
   margin: 0;
 }
