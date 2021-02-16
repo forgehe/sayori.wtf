@@ -1,5 +1,5 @@
 function playVid(){
-var vid = document.getElementById("bgvid");
+    var vid = document.getElementById("bgvid");
 	vid.play();
     if(vid.muted) {
         vid.muted = false;
@@ -7,13 +7,20 @@ var vid = document.getElementById("bgvid");
 // There is no muting the meme train CHOOO CHOOOO
 };
 
+function playAudio(){
+    var audio = document.getElementById("bgm");
+    audio.play();
+    if(audio.muted) {
+        audio.muted = false;
+    }
+}
+
 window.onload = function() {
     var backgroundAudio=document.getElementById("bgvid");
     backgroundAudio.volume=0.7;
 }
 
 /*
-
        _           _     __  __             _ _         
       | |         | |   |  \/  |           (_) |        
       | |_   _ ___| |_  | \  / | ___  _ __  _| | ____ _ 
